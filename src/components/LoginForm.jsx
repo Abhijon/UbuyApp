@@ -10,7 +10,6 @@ export default function LoginForm() {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    // Demo validation
     if (!email) return alert('Enter email')
     if (useOtp ? !otp : !password) return alert('Complete required fields')
     alert('Logged in (demo)')
